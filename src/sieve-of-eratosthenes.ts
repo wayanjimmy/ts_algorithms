@@ -4,7 +4,7 @@ export function sieveOfEratosThenes(n: number): Array<number> {
   primes[0] = false;
   primes[1] = false;
 
-  for (let i = 2; i <= Math.sqrt(n); i += 2) {
+  for (let i = 2; i <= Math.sqrt(n); i++) {
     for (let j = 2; j * i <= n; j++) {
       primes[i * j] = false;
     }
