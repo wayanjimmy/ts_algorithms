@@ -1,4 +1,4 @@
-import { harmlessRansomNote } from "./harmless-ransom-note";
+import { harmlessRansomNote } from "../harmless-ransom-note";
 
 it("should return false", () => {
   const noteText = "this is a secret note for you from a secret admirer";

@@ -1,4 +1,4 @@
-import { fizzbuzz } from "./fizzbuzz";
+import { fizzbuzz } from "../fizzbuzz";
 
 it("should returns FizzBuzz", () => {
   expect(fizzbuzz(15)).toBe("FizzBuzz");

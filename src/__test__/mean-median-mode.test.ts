@@ -1,4 +1,4 @@
-import { meanMedianMode } from "./mean-median-mode";
+import { meanMedianMode } from "../mean-median-mode";
 
 it("should return { mean: 5.166666666666667, median: 4.5, mode: [4]}", () => {
   // 3, 4, 4, 5, 6, 9

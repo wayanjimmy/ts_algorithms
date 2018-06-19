@@ -1,22 +1,16 @@
-export function sieveOfEratosThenes(num: number): Array<number> {
-  const arrInBool = Array.from({ length: num }, () => true);
+export function sieveOfEratosThenes(n: number): Array<number> {
+  const primes = Array.from({ length: n }, () => true);
 
-  if (num > 2) {
-    for (let i = 0; i < 2; i++) {
-      arrInBool[i] = false;
+  primes[0] = false;
+  primes[1] = false;
+
+  for (let i = 2; i <= Math.sqrt(n); i += 2) {
+    for (let j = 2; j * i <= n; j++) {
+      primes[i * j] = false;
     }
   }
 
-  for (let i = 2; i <= num; i += 2) {
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) {
-        arrInBool[i] = false;
-        continue;
-      }
-    }
-  }
-
-  return arrInBool
+  return primes
     .map((isPrime, index) => {
       if (isPrime) {
         return index;

@@ -1,4 +1,4 @@
-import { fibMemo } from "./memoized-fibonacci";
+import { fibMemo } from "../memoized-fibonacci";
 
 it("should return 3", () => {
   expect(fibMemo(4)).toBe(3);

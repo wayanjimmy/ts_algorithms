@@ -1,4 +1,4 @@
-import { fibonacci } from "./fibonacci";
+import { fibonacci } from "../fibonacci";
 
 it("should return 3", () => {
   expect(fibonacci(4)).toBe(3);
