@@ -14,4 +14,3 @@ export function twoSum(numArray: Array<number>, sum: number): Array<number[]> {
 
   return pairs;
 }
-
