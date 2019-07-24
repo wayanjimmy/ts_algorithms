@@ -1,5 +1,5 @@
-import { test } from "https://deno.land/std@v0.7/testing/mod.ts";
-import { assertEquals } from "https://deno.land/std@v0.7/testing/asserts.ts";
+import { test } from "https://deno.land/std/testing/mod.ts";
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { reverseArrayInPlace } from "./reverse_array_in_place.ts";
 
 test({

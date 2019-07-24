@@ -1,4 +1,4 @@
-import { runTests } from "https://deno.land/std@v0.7/testing/mod.ts";
+import { runTests } from "https://deno.land/std/testing/mod.ts";
 
 import "./algorithms/twosum_test.ts";
 import "./algorithms/fizz_buzz_test.ts";
