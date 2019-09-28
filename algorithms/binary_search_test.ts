@@ -1,6 +1,6 @@
 import { test } from "https://deno.land/std/testing/mod.ts";
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { binarySearch } from "./binary_search.ts";
+import { binarySearch } from "./binary_search_logarithmic.ts";
 
 test({
   name: "[binary search] should return `true`",
