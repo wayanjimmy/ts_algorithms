@@ -5,11 +5,36 @@ import { binarySearch } from "./binary_search.ts";
 test({
   name: "[binary search] should return `true`",
   fn: () =>
-    assertEquals(binarySearch([5, 7, 12, 16, 36, 39, 42, 56, 71], 56), true)
+    assertEquals(
+      binarySearch(
+        [
+          10,
+          20,
+          47,
+          59,
+          63,
+          75,
+          88,
+          99,
+          107,
+          120,
+          133,
+          155,
+          162,
+          176,
+          188,
+          199,
+          200,
+          210,
+          222
+        ],
+        47
+      ),
+      2
+    )
 });
 
 test({
   name: "[binary search] should return `false`",
-  fn: () =>
-    assertEquals(binarySearch([5, 7, 12, 16, 36, 39, 42, 56, 71], 72), false)
+  fn: () => assertEquals(binarySearch([188, 199, 200, 210, 222], 175), -1)
 });
